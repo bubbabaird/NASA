@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<!--<form action="/" method="post">-->
+    <!--<input type="text" placeholder="Search" name="search" />-->
+    <!--<button type="submit">Search</button>-->
+<!--</form>-->
+{{#nasa}}
+    {{#items}}
+        {{#data}}
+            Title: {{title}}<br />
+            Keywords: {{keywords}}<br />
+        {{#links}}
+            Image: <br /><img src="{{href}}" />
+<br />
+<br />
+        {{/links}}
+        {{/data}}
+    {{/items}}
+{{/nasa}}
+</body>
+</html>
